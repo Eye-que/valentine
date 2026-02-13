@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will you be my Valentine? 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Falling Hearts Container -->
+  <div id="fallingHeartsContainer"></div>
+
+  <!-- Falling Colors Container -->
+  <div id="fallingColorsContainer"></div>
+
+  <!-- Main Container -->
+  <div class="container" id="mainCard">
+    <!-- GIF Section -->
+    <div class="gif-section">
+      <img src="gif/tonibear-bear.gif" alt="Dancing Bear" />
+    </div>
+
+    <!-- Main Heading -->
+    <h1>Will you be my Valentine? 💖</h1>
+
+    <!-- Buttons Section -->
+    <div class="button-container">
+      <!-- YES button: grows on every NO click, pointer-events managed by JS -->
+      <button id="yesBtn">💗 YES</button>
+      <!-- NO button: cycles through messages, then gets disabled when noDepleted=true -->
+      <button id="noBtn">😢 NO</button>
+    </div>
+  </div>
+
+  <!-- Envelope Modal -->
+  <div id="envelopeModal" class="envelope-modal hidden">
+    <div class="envelope-container">
+      <div class="envelope">
+        <div class="envelope-flap" id="envelopeFlap">
+          <button id="openEnvelopeBtn" class="open-btn">📭 Open Me 💌</button>
+        </div>
+        <div class="envelope-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Letter Modal -->
+  <div id="letterModal" class="letter-modal hidden">
+    <div class="letter-container">
+      <div class="letter">
+        <div class="letter-header">
+          <h2>💌 Our Love Story 💌</h2>
+        </div>
+        <div class="letter-content">
+          <p class="call-sign"></p>
+          <p class="greeting">Dear Apple,</p>
+          <p class="message">
+            It has been the most wonderful 2 years being by your side. 
+            Every moment with you is a blessing, and I fall in love with you more each day. 
+            You are my everything, and I cannot imagine life without you.
+            <br><br>
+            Will you continue this beautiful journey with me?
+            <br><br>
+            Forever yours with all my love,
+            <br>
+            Your Love 💖
+          </p>
+        </div>
+        <button id="closeLetterBtn" class="close-letter-btn">💖 Close Letter</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
